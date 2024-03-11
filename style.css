@@ -11,12 +11,14 @@
 .after{
     display: flex;
     background-color: whitesmoke;
+    background-image: url(patch.jpg);
+    object-fit: fill;
 }
 
 #patch{
     width: 30cm;
     height: 10cm;
-    object-fit: cover;
+    object-fit: fill;
     border-radius: 20px;
 }
 
@@ -27,4 +29,6 @@
 .talents{
     font-size: x-large;
     background-color: whitesmoke;
+    background-image: url(squad.jpg);
+    object-fit: cover;
 }
