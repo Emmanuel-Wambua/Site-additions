@@ -1,34 +1,204 @@
-
-.begin{
+body{
+    font-family: 'lato', sans-serif;
+    padding: 0;
     margin: 0;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-left: 700px;
-    align-items: center;
-    background-color: whitesmoke;
 }
 
-.after{
+nav{
+    background-color: #111;
+    color: white;
+    padding: 20px 50px;
+    z-index: 100000;
+    position: sticky;
+    top: 0;
+}
+
+.navTop{
     display: flex;
-    background-color: whitesmoke;
-    background-image: url(patch.jpg);
-    object-fit: fill;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#patch{
-    width: 30cm;
-    height: 10cm;
-    object-fit: fill;
-    border-radius: 20px;
+.search{
+    display: flex;
+    align-items: center;
 }
 
-.int{
-    font-size: x-large;
+.limitedoffer{
+    font-size: 20px;
+    border-bottom: 2px solid white;
+    cursor: pointer;
 }
 
-.talents{
-    font-size: x-large;
-    background-color: whitesmoke;
-    background-image: url(squad.jpg);
-    object-fit: cover;
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItem{
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+}
+
+.homepagestuff{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Forehead{
+    border-radius: 50%;
+    filter: grayscale(1);
+}
+
+.aboutMe h2{
+    position: relative;
+    font-size: 60px;
+    color: lightgray;
+    text-transform: uppercase;
+}
+
+.aboutMe h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: rgb(71, 59, 139);
+    border-right: 2px solid black;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+.aboutMe p{
+    font-size: 60px;
+    color: rgb(12, 12, 12);
+    font-weight: 400;
+}
+
+.footinginnit{
+    background-color: #111;
+    color: rgb(235, 231, 231);
+    padding: 30px;
+}
+
+.menuItem a{
+    text-decoration: none;
+    color: lightgray;
+}
+
+.menuItem a:hover{
+    color: rgb(82, 76, 76);
+}
+
+.container {
+    margin: 0px auto 0px auto;
+    text-align: center;
+}
+
+
+.product-card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product-title {
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+}
+
+.product-price {
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+} 
+
+
+.view-btn {
+    background-color: cornflowerblue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.25s ease;
+}
+.view-btn:hover { 
+    opacity: 0.8;
+}
+
+.sellItems{
+    display: flex;
+}
+
+#primaryInfo{
+    border: 2px #111 solid;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#highschoolInfo{
+    border: 2px #111 solid;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#codingInfo{
+    border: 2px #111 solid;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
 }
